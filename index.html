@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        #pagination {
+            margin-top: 20px;
+        }
+        .page-item {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .active {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Todo List</h1>
+
+    <input type="text" id="todoInput" placeholder="Add a new task">
+    <button onclick="addTodo()">Add</button>
+    <input type="text" id="searchInput" placeholder="Search tasks" onkeyup="searchTodos()">
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Task</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="result">
+           
+        </tbody>
+    </table>
+
+    <div id="pagination">
+       
+    </div>
+
+    <script src="./app.js">
+       
+    </script>
+
+</body>
+</html>
